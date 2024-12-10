@@ -1,25 +1,25 @@
 import React from 'react';
 
-type container3Props = {
+type Container3Props = {
 
 };
 
-const container3:React.FC<container3Props> = () => {
+const Container3:React.FC<Container3Props> = () => {
 
     return (
       <div
         style={{
           display: "grid",
-          gridTemplateAreas: `"header header header header"
-                         "sidebar main main main"
-                         "footer footer footer footer"`,
-          gridTemplateColumns: "1fr 3fr",
+          gridTemplateAreas: `
+          "apresentacao portifoio"
+          `,
+          gridTemplateColumns: "400px 700px",
           gap: "10px",
         }}
       >
         <div
           style={{
-            gridArea: "header",
+            gridArea: "apresentacao",
             backgroundColor: "lightblue",
             padding: "20px",
           }}
@@ -28,27 +28,18 @@ const container3:React.FC<container3Props> = () => {
         </div>
         <div
           style={{
-            gridArea: "sidebar",
-            backgroundColor: "lightcoral",
-            padding: "20px",
-          }}
-        >
-          Sidebar
-        </div>
-        <div
-          style={{
-            gridArea: "main",
+            gridArea: "portifoio",
             backgroundColor: "lightgreen",
             padding: "20px",
             display: "grid",
-            gridTemplateAreas: `"area1 area2 area3 area4"
+            gridTemplateAreas: `"area5 area2 area3 area4"
                              "area5 area6 area7 area8"
-                             "area9 area9 area9 area9"`,
+                             "area5 area9 area9 area9"`,
             gridTemplateColumns: "1fr 1fr 1fr 1fr",
             gap: "10px",
           }}
         >
-          <div
+          {/* <div
             style={{
               gridArea: "area1",
               backgroundColor: "lightcoral",
@@ -56,7 +47,7 @@ const container3:React.FC<container3Props> = () => {
             }}
           >
             Area 1
-          </div>
+          </div> */}
           <div
             style={{
               gridArea: "area2",
@@ -130,7 +121,7 @@ const container3:React.FC<container3Props> = () => {
             Area 9
           </div>
         </div>
-        <div
+        {/* <div
           style={{
             gridArea: "footer",
             backgroundColor: "lightgray",
@@ -138,8 +129,8 @@ const container3:React.FC<container3Props> = () => {
           }}
         >
           Footer
-        </div>
+        </div> */}
       </div>
     );
 }
-export default container3;
+export default Container3;

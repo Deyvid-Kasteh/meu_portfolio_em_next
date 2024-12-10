@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Container from "./components/Container";
 import Container2 from "./components/Container2";
+import Container3 from "./components/Container3";
 
 
 export default function Home() {
@@ -11,7 +12,8 @@ export default function Home() {
     // </div>
     <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
       {/* <Container /> */}
-      <Container2/>
+      {/* <Container2 /> */}
+      <Container3/>
     </div>
   );
 }
