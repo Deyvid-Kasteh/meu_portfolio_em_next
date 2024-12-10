@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar";
 import Container from "./components/Container";
+import Container2 from "./components/Container2";
+
 
 export default function Home() {
   return (
@@ -7,8 +9,9 @@ export default function Home() {
     //   <h1>kasteh portfolio</h1>
     //   <Navbar />
     // </div>
-    <div className="h-screen flex justify-center items-center bg-yellow-400">
-      <Container />
+    <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+      {/* <Container /> */}
+      <Container2/>
     </div>
   );
 }
