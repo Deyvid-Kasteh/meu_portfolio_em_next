@@ -1,4 +1,6 @@
 import React from "react";
+import BiblioteraWeb from "../../../public/bibliotecaWEB.png";
+import Image from "next/image";
 
 type Container3Props = {};
 
@@ -35,21 +37,34 @@ const Container3: React.FC<Container3Props> = () => {
                              "area1 area1 area2"
                              "area3 area4 area4"`,
           gridTemplateColumns: "1fr 280px 1fr",
+          gridTemplateRows: "95px 142px 142px 142px",
           gap: "40px",
         }}
       >
         <div
           style={{
             gridArea: "header",
+            // height: "100px",
+            // display: 'inline-block',
             backgroundColor: "#f6f6f6",
-            padding: "10px",
-            border: "1px solid black",
+            // backgroundColor: "green",
+            // padding: "10px",
+            // border: "1px solid black",
             borderRadius: "5px",
             display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            justifyContent: "flex-start",
+            alignItems: "flex-start",
+            flex: "1",
+            fontWeight: "bold",
+            fontSize: "106px",
+            // lineHeight: "0px",
+            // fontFamily: "Monoton, sans-serif",
+            // fontFamily: "Michroma, sans-serif",
+            fontFamily: "Major Mono Display, sans-serif",
+            color: "black",
           }}
         >
+          {/* Portfolio */}
           Portfolio
         </div>
         <div
@@ -57,11 +72,24 @@ const Container3: React.FC<Container3Props> = () => {
             gridArea: "area1",
             background:
               "conic-gradient(from 0deg, #ef7b78, #99d5e0, #7a876a,  #7a876a, #ef7b78)",
-            padding: "10px",
+            // padding: "10px",
             borderRadius: "16px",
+            display: "flex",
+            flex: "1",
+            overflow: "hidden",
+            width: "100%",
           }}
         >
-          Area 1
+          <Image
+            src={BiblioteraWeb}
+            alt="Bibliotera Web"
+            width={518.4}
+            height={324}
+            style={{
+              // objectPosition: "right",
+              objectPosition: "center center",
+            }}
+          />
         </div>
         <div
           style={{
@@ -147,7 +175,7 @@ const Container3: React.FC<Container3Props> = () => {
               padding: "10px",
               justifyContent: "center",
               alignItems: "center",
-              
+
               // borderTopRightRadius: "16px",
               // borderBottomRightRadius: "16px",
             }}

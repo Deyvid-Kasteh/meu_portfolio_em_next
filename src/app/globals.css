@@ -1,6 +1,15 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Geostar&family=Major+Mono+Display&family=Michroma&family=Monoton&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Zen+Dots&display=swap');
+
+
+
 
 :root {
   --background: #ffffff;
@@ -20,5 +29,7 @@
 body {
   color: black;
   /* background: var(--background); */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif, "Orbitron", "Roboto", ;
+  padding: 0;
+  margin: 0;
 }
