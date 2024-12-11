@@ -1,5 +1,12 @@
 import React from "react";
 import BiblioteraWeb from "../../../public/bibliotecaWEB.png";
+import foto1 from "../../../public/imagePerfil.png";
+import foto2 from "../../../public/imagePerfil2.png";
+import foto22 from "../../../public/imagePerfil22.png";
+import foto222 from "../../../public/imagePerfil2semFundo.png";
+import foto3 from "../../../public/imageQuadrada.jpg";
+import fotoPerfil from "../../../public/imageRostoSemFundo.png";
+import fotoPerfil2 from "../../../public/imageQuadrada2.png";
 import Image from "next/image";
 
 type Container3Props = {};
@@ -22,9 +29,74 @@ const Container3: React.FC<Container3Props> = () => {
           gridArea: "apresentacao",
           backgroundColor: "#8184d3",
           padding: "20px",
+          borderRadius: "20px",
+          overflow: "hidden",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+
+          // backgroundColor: "#a3a3ff", // Cor de fundo
+          // width: "300px", // Largura da div
+          // height: "400px", // Altura da div
+          // position: "relative", // Necessário para o clip-path
+          // clipPath: "polygon(0 10%, 100% 0, 100% 90%, 0 100%)", // Forma personalizada
+
+          // backgroundColor: "#a3ffa3",
+          // width: "300px",
+          // height: "400px",
+          // clipPath: "polygon(94% 0, 100% 0, 100% 78%, 6% 100%, 0 100%, 0 50%)",
         }}
       >
-        Header
+        <div
+          style={{
+            display: "flex",
+            flex: "1",
+            // width: "100%",
+            height: "100%",
+            // height: "200px",
+            // backgroundColor: "red",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            src={fotoPerfil2}
+            alt="Foto"
+            width={250}
+            height={250}
+            style={{
+              display: "flex",
+              // flex: "1",
+              // width: "100%",
+              borderRadius: "50%",
+              // backgroundColor: "white",
+              border: "8px solid #f6f6f6",
+            }}
+          />
+          <p
+            style={{
+              fontSize: "30px",
+              fontWeight: "bold",
+              fontFamily: "Roboto, sans-serif",
+              color: "white",
+              margin: "10px",
+            }}
+          >
+            Oi, sou David
+          </p>
+          <p
+            style={{
+              fontSize: "20px",
+              fontWeight: "bold",
+              fontFamily: "Roboto, sans-serif",
+              color: "white",
+              margin: "0px",
+            }}
+          >
+            Desenvolvedor Web/Mobile
+          </p>
+        </div>
       </div>
       <div
         style={{
@@ -46,26 +118,32 @@ const Container3: React.FC<Container3Props> = () => {
             gridArea: "header",
             // height: "100px",
             // display: 'inline-block',
-            backgroundColor: "#f6f6f6",
+            // backgroundColor: "#f6f6f6",
             // backgroundColor: "green",
             // padding: "10px",
             // border: "1px solid black",
             borderRadius: "5px",
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "flex-start",
+            // display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
             flex: "1",
-            fontWeight: "bold",
-            fontSize: "106px",
-            // lineHeight: "0px",
-            // fontFamily: "Monoton, sans-serif",
-            // fontFamily: "Michroma, sans-serif",
-            fontFamily: "Major Mono Display, sans-serif",
-            color: "black",
           }}
         >
-          {/* Portfolio */}
-          Portfolio
+          <p
+            style={{
+              flex: "1",
+              fontWeight: "bold",
+              fontSize: "124.5px",
+              lineHeight: "110px",
+              margin: "0px",
+              // fontFamily: "Monoton, sans-serif",
+              // fontFamily: "Michroma, sans-serif",
+              fontFamily: "Zen Dots, sans-serif",
+              color: "black",
+            }}
+          >
+            Portfolio
+          </p>
         </div>
         <div
           style={{
@@ -82,7 +160,7 @@ const Container3: React.FC<Container3Props> = () => {
         >
           <Image
             src={BiblioteraWeb}
-            alt="Bibliotera Web"
+            alt="Bibliotera Web site"
             width={518.4}
             height={324}
             style={{
