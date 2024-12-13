@@ -8,6 +8,7 @@ import foto3 from "../../../public/imageQuadrada.jpg";
 import fotoPerfil from "../../../public/imageRostoSemFundo.png";
 import fotoPerfil2 from "../../../public/imageQuadrada2.png";
 import Image from "next/image";
+import appBiblioteca from "../../../public/AppBiblioteca.png";
 
 type Container3Props = {};
 
@@ -83,7 +84,7 @@ const Container3: React.FC<Container3Props> = () => {
               margin: "10px",
             }}
           >
-            Oi, sou David
+            Oi! sou David👋
           </p>
           <p
             style={{
@@ -172,7 +173,7 @@ const Container3: React.FC<Container3Props> = () => {
         <div
           style={{
             gridArea: "area2",
-            // backgroundColor: "lightblue",
+            backgroundColor: "lightblue",
             // padding: "10px",
             display: "flex",
             flex: "1",
@@ -181,7 +182,7 @@ const Container3: React.FC<Container3Props> = () => {
             borderRadius: "16px",
           }}
         >
-          <div
+          {/* <div
             style={{
               display: "flex",
               flex: 1,
@@ -204,7 +205,14 @@ const Container3: React.FC<Container3Props> = () => {
             }}
           >
             Area 2.2
-          </div>
+          </div> */}
+          {/* <div></div> */}
+          <Image
+            src={appBiblioteca}
+            alt="Bibliotera Mobile"
+            width={170}
+            height={324}
+          />
         </div>
         <div
           style={{
