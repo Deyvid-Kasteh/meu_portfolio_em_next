@@ -9,6 +9,30 @@ import fotoPerfil from "../../../public/imageRostoSemFundo.png";
 import fotoPerfil2 from "../../../public/imageQuadrada2.png";
 import Image from "next/image";
 import appBiblioteca from "../../../public/AppBiblioteca.png";
+import starbucksLandingPage from "../../../public/starbucks.png";
+import { FaReact } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiTypescript, SiMongodb, SiPostgresql } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import { TbBrandTypescript } from "react-icons/tb";
+import { RiJavascriptLine } from "react-icons/ri";
+import { TbDeviceMobileCode } from "react-icons/tb";
+import { FaLaptopCode, FaDatabase } from "react-icons/fa";
+
+
+
+
+{/* <TbDeviceMobileCode />; */ }
+{/* <FaLaptopCode />; */ }
+{/* <FaDatabase />; */}
+
+
+
+
+
+
+//img.icons8.com/?size=100&id=zuK0mtFDZAfG&format=png&color=000000
 
 type Container3Props = {};
 
@@ -59,6 +83,7 @@ const Container3: React.FC<Container3Props> = () => {
             // backgroundColor: "red",
             flexDirection: "column",
             alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
           <Image
@@ -95,8 +120,70 @@ const Container3: React.FC<Container3Props> = () => {
               margin: "0px",
             }}
           >
-            Desenvolvedor Web/Mobile
+            Desenvolvedor Web/Mobile.
           </p>
+          <p>
+            Tenho 2 anos de experiência em projetos utilizando JavaScript,
+            TypeScript, React, React Native, Next.js, MongoDB e PostgreSQL.
+          </p>
+          <div
+            style={{
+              display: "flex",
+              flex: "1",
+              width: "100%",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "space-around",
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "#8184d3",
+              }}
+            >
+              <RiJavascriptLine
+                style={{
+                  fontSize: "40px",
+                  color: "white",
+                }}
+              />
+            </div>
+            {/* <div
+              style={{
+                display: "flex",
+                width: "100%",
+                backgroundColor: "white",
+                borderRadius: "10%",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
+              <RiJavascriptLine
+                style={{
+                  fontSize: "40px",
+                  color: "#8184d3",
+                }}
+              />
+              Javascript
+            </div> */}
+            <div>
+              <TbBrandTypescript style={{ fontSize: "40px", color: "white" }} />
+            </div>
+            <div>
+              <TbBrandReactNative
+                style={{ fontSize: "40px", color: "white" }}
+              />
+            </div>
+            <div>
+              <FaReact style={{ fontSize: "40px", color: "white" }} />
+            </div>
+            <div>
+              <SiMongodb style={{ fontSize: "40px", color: "white" }} />
+            </div>
+            <div>
+              <SiPostgresql style={{ fontSize: "40px", color: "white" }} />
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -244,14 +331,19 @@ const Container3: React.FC<Container3Props> = () => {
               display: "flex",
               flex: 1,
               backgroundColor: "#000000",
-              padding: "10px",
+              // padding: "10px",
               justifyContent: "center",
               alignItems: "center",
               // borderTopLeftRadius: "16px",
               // borderBottomLeftRadius: "16px",
             }}
           >
-            Area 2.1
+            <Image
+              src={starbucksLandingPage}
+              alt="Landing Page"
+              width={245}
+              height={142}
+            />
           </div>
           <div
             style={{
