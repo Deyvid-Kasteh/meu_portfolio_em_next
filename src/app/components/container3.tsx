@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+
+
+import React, { useState, useEffect } from "react";
 import BiblioteraWeb from "../../../public/bibliotecaWEB.png";
 import foto1 from "../../../public/imagePerfil.png";
 import foto2 from "../../../public/imagePerfil2.png";
@@ -10,6 +13,8 @@ import fotoPerfil2 from "../../../public/imageQuadrada2.png";
 import Image from "next/image";
 import appBiblioteca from "../../../public/AppBiblioteca.png";
 import starbucksLandingPage from "../../../public/starbucks.png";
+import lotofacilLandingPage from "../../../public/lotofacil.png";
+
 import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
@@ -18,19 +23,21 @@ import { TbBrandReactNative } from "react-icons/tb";
 import { TbBrandTypescript } from "react-icons/tb";
 import { RiJavascriptLine } from "react-icons/ri";
 import { TbDeviceMobileCode } from "react-icons/tb";
-import { FaLaptopCode, FaDatabase } from "react-icons/fa";
+import { FaLaptopCode, FaDatabase, FaJava } from "react-icons/fa";
+import IconTransition from "./teste";
 
-
-
-
-{/* <TbDeviceMobileCode />; */ }
-{/* <FaLaptopCode />; */ }
-{/* <FaDatabase />; */}
-
-
-
-
-
+{
+  /* <TbDeviceMobileCode />; */
+}
+{
+  /* <FaLaptopCode />; */
+}
+{
+  /* <FaDatabase />; */
+}
+{
+  /* <FaJava /> */
+}
 
 //img.icons8.com/?size=100&id=zuK0mtFDZAfG&format=png&color=000000
 
@@ -100,7 +107,7 @@ const Container3: React.FC<Container3Props> = () => {
               border: "8px solid #f6f6f6",
             }}
           />
-          <p
+          <span
             style={{
               fontSize: "30px",
               fontWeight: "bold",
@@ -110,8 +117,8 @@ const Container3: React.FC<Container3Props> = () => {
             }}
           >
             Oi! sou David👋
-          </p>
-          <p
+          </span>
+          <span
             style={{
               fontSize: "20px",
               fontWeight: "bold",
@@ -121,7 +128,7 @@ const Container3: React.FC<Container3Props> = () => {
             }}
           >
             Desenvolvedor Web/Mobile.
-          </p>
+          </span>
           <p>
             Tenho 2 anos de experiência em projetos utilizando JavaScript,
             TypeScript, React, React Native, Next.js, MongoDB e PostgreSQL.
@@ -136,7 +143,7 @@ const Container3: React.FC<Container3Props> = () => {
               justifyContent: "space-around",
             }}
           >
-            <div
+            {/* <div
               style={{
                 backgroundColor: "#8184d3",
               }}
@@ -147,7 +154,7 @@ const Container3: React.FC<Container3Props> = () => {
                   color: "white",
                 }}
               />
-            </div>
+            </div> */}
             {/* <div
               style={{
                 display: "flex",
@@ -166,6 +173,8 @@ const Container3: React.FC<Container3Props> = () => {
               />
               Javascript
             </div> */}
+            {/* <IconTransition/> */}
+
             <div>
               <TbBrandTypescript style={{ fontSize: "40px", color: "white" }} />
             </div>
@@ -178,10 +187,34 @@ const Container3: React.FC<Container3Props> = () => {
               <FaReact style={{ fontSize: "40px", color: "white" }} />
             </div>
             <div>
-              <SiMongodb style={{ fontSize: "40px", color: "white" }} />
+              <FaJava style={{ fontSize: "40px", color: "white" }} />
             </div>
             <div>
-              <SiPostgresql style={{ fontSize: "40px", color: "white" }} />
+              <SiMongodb style={{ fontSize: "40px", color: "white" }} />
+            </div>
+            <div
+              className="
+              transition
+              duration-300
+        ease-in-out
+        hover:scale-105
+        hover:bg-blue-100
+        opacity-75
+        hover:opacity-100
+      "
+            >
+              <SiPostgresql
+                style={{ fontSize: "40px", color: "white" }}
+                className="
+              transition
+              duration-300
+        ease-in-out
+        hover:scale-105
+        hover:bg-blue-100
+        opacity-75
+        hover:opacity-100
+      "
+              />
             </div>
           </div>
         </div>
@@ -340,7 +373,7 @@ const Container3: React.FC<Container3Props> = () => {
           >
             <Image
               src={starbucksLandingPage}
-              alt="Landing Page"
+              alt="Starbucks Landing Page"
               width={245}
               height={142}
             />
@@ -350,7 +383,7 @@ const Container3: React.FC<Container3Props> = () => {
               display: "flex",
               flex: 1,
               backgroundColor: "#ffc267",
-              padding: "10px",
+              // padding: "10px",
               justifyContent: "center",
               alignItems: "center",
 
@@ -358,7 +391,12 @@ const Container3: React.FC<Container3Props> = () => {
               // borderBottomRightRadius: "16px",
             }}
           >
-            Area 4.2
+            <Image
+              src={lotofacilLandingPage}
+              alt="Lotofacil Landing Page"
+              width={245}
+              height={142}
+            />
           </div>
         </div>
       </div>
