@@ -1,0 +1,162 @@
+/* Estilo principal para o Container3 */
+.container3 {
+  display: grid;
+  grid-template-areas: "apresentacao portifolio";
+  grid-template-columns: 400px 700px;
+  gap: 40px;
+  /* padding: 20px; */
+  height: 640px;
+}
+
+/* Estilo da seção Apresentação */
+.container3 .apresentacao {
+  grid-area: "apresentacao";
+  background-color: #8184d3;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: "hidden";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container3 .apresentacao img {
+  border-radius: 50%;
+  border: 6px solid #f6f6f6;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.container3 .apresentacao .greeting {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.container3 .apresentacao .profession {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.container3 .apresentacao p {
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.container3 .apresentacao .icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 24px;
+}
+
+/* Estilo da seção Portfólio */
+.container3 .portifolio {
+  grid-area: portifolio;
+  background-color: #f6f6f6;
+  border-radius: 16px;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "area1"
+    "area2"
+    "area3"
+    "area4";
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 20px;
+}
+
+.container3 .portifolio .header {
+  grid-area: header;
+  font-family: "Zen Dots", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container3 .portifolio .area1,
+.container3 .portifolio .area2,
+.container3 .portifolio .area3,
+.container3 .portifolio .area4 {
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+}
+
+.container3 .portifolio .area4 {
+  display: flex;
+  gap: 10px;
+}
+
+.container3 .portifolio .area4 div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  border-radius: 8px;
+}
+
+.container3 .portifolio .area4 .starbucks {
+  background-color: #000;
+}
+
+.container3 .portifolio .area4 .lotofacil {
+  background-color: #ffc267;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .container3 {
+    grid-template-areas:
+      "apresentacao"
+      "portifoio";
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .container3 .portifolio {
+    grid-template-areas:
+      "header"
+      "area1"
+      "area2"
+      "area3"
+      "area4";
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 480px) {
+  .container3 {
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .container3 .apresentacao img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .container3 .apresentacao .greeting {
+    font-size: 20px;
+  }
+
+  .container3 .apresentacao .profession {
+    font-size: 16px;
+  }
+
+  .container3 .portifoio .header {
+    font-size: 24px;
+  }
+
+  .container3 .portifoio {
+    gap: 10px;
+  }
+}

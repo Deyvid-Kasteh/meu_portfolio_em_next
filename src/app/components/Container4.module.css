@@ -1,0 +1,179 @@
+.container {
+  display: grid;
+  grid-template-areas: "apresentacao portifolio";
+  grid-template-columns: 400px 700px;
+  gap: 40px;
+  height: 640px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.apresentacaoContainer {
+  grid-area: "apresentacao";
+  background-color: #8184d3;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: "hidden";
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.apresentacao {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imagemPerfil {
+  display: flex;
+  border-radius: 50%;
+  border: 8px solid #f6f6f6;
+}
+
+.greeting {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 10px;
+}
+
+.profession {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 10px;
+}
+
+.container .apresentacaoContainer .apresentacao p {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.iconsApresentacao {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.portifolioContainer {
+  grid-area: "portifolio";
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "area1 area1 area2"
+    "area1 area1 area2"
+    "area3 area4 area4";
+  grid-template-columns: 1fr 280px 1fr;
+  grid-template-rows: 95px 142px 142px 142px;
+  gap: 40px;
+}
+
+.header {
+  grid-area: header;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.header p {
+  flex: 1;
+  font-weight: bold;
+  font-size: 124.5px;
+  line-height: 110px;
+  margin: 0px;
+  font-family: "Zen Dots", sans-serif;
+  color: black;
+}
+
+.area1 {
+  grid-area: area1;
+  background: conic-gradient(
+    from 0deg,
+    #ef7b78,
+    #99d5e0,
+    #7a876a,
+    #7a876a,
+    #ef7b78
+  );
+  border-radius: 16px;
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+}
+
+.area2 {
+  grid-area: area2;
+  background-color: lightblue;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.area3 {
+  grid-area: area3;
+  background-color: #595959;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.area4 {
+  grid-area: area4;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.area4 div {
+  display: flex;
+  flex: 1;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      "apresentacao"
+      "portifoio";
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+
+  .portifolioContainer {
+    grid-template-areas:
+      "header"
+      "area1"
+      "area2"
+      "area3"
+      "area4";
+    grid-template-columns: 1fr;
+  }
+}
